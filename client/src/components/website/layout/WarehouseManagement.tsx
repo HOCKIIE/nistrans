@@ -3,10 +3,10 @@ import Link from "next/link";
 export default function () {
   return (
     <div className="">
-      <div className="container mx-auto">
+      <div className="container mx-auto px-2 lg:px-0">
         <section className="md:w-[80%] w-full md:mx-auto">
           <div className="flex items-center text-slate-700">
-            <div className="bg-slate-100 p-10 rounded-lg">
+            <div className="bg-slate-100 p-4 md:p-10 rounded-lg">
               <div className="py-10 flex justify-center items-center flex-col text-blue-950 gap-3">
                 <h2 className="text-2xl">
                   คลังสินค้าและการจัดการคลังสินค้าของ Siam Nistrans

@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function HomeMoving() {
   return (
     <div className="py-20">
-      <div className="container mx-auto text-slate-700">
+      <div className="container mx-auto text-slate-700 px-2 lg:px-0">
         <div className="pb-20 flex justify-center items-center flex-col text-blue-950 gap-3">
           <h2 className="text-3xl">งานขนย้ายโดย Siam Nistrans</h2>
           <div className="h-1 w-20 bg-orange-400"></div>

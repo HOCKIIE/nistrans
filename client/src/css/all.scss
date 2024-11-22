@@ -1,0 +1,78 @@
+// sm
+@media screen and (min-width:'375px') {
+    .homeWarehouse{
+        .container{
+            background-color: #2f2d2e;
+        }
+    }
+}
+// md
+@media screen and (min-width:'768px') {
+    .homeWarehouse{
+        .container{
+            background-color: #2f2d2e;
+            padding: unset;
+        }
+    }
+    .homeWarehouse{
+        .bg-img{
+            background-repeat: no-repeat;
+
+        }
+    }
+}
+@media screen and (min-width:'768px') and (orientation: portrait){
+    
+}
+@media screen and (min-width:'768px') and (orientation: landscape){
+    
+}
+// lg
+@media screen and (min-width:"1024px") {
+    .header{
+        .logo{
+            img{
+                width:440px;
+            }
+        }
+    }
+    .homeWarehouse{
+        .container{
+            padding-left: 10rem;
+            padding-right: 10rem;
+        }
+        .bg-img{
+            // background-image: 'url("./img/005.jpg")';
+            background-repeat: no-repeat;
+    
+        }
+    }
+}
+
+// xl
+@media screen and (min-width:"1280px") {
+    .homeWarehouse{
+        .container{ 
+            background-color: unset;
+            width: revert;
+        }
+    }
+}
+
+// 2xl
+@media screen and (min-width:"1536px") {
+
+}
+
+
+.border-white-orange{
+    position: relative;
+}
+.border-white-orange:before{
+    position: absolute;
+    background: white;
+    height: 4px;
+    content: '';
+    width: 50%;
+    left: 0;
+}

@@ -15,10 +15,10 @@ export default function AboutSection({ description }: any) {
         />
         {/* <div className="absolute top-0 right-0 bottom-0 left-0 bg-white/90"></div> */}
       </div>
-      <div className="container mx-auto flex flex-col items-center gap-4 sm:gap-10 relative">
+      <div className="container mx-auto px-2 lg:px-0 flex flex-col items-center gap-4 sm:gap-10 relative">
         <div className="flex flex-col items-center gap-4">
           <h1
-            className="text-base sm:text-xl font-semibold text-white"
+            className="text-base sm:text-xl font-semibold text-white text-center"
             style={{ textShadow: "black 1px 1px 1px" }}
           >
             Siam Nistrans เป็นบริษัทในเครือของ "NISSIN CORPORATION"

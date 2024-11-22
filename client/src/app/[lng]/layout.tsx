@@ -6,6 +6,7 @@ import Footer from "@/components/website/layout/Footer";
 import PageSettingProvider from "@/contexts/PageSettingContext";
 import { Kanit, Roboto } from "next/font/google";
 import { ConfigProvider } from "antd";
+import "./../../css/all.scss"
 
 import Favicon from "../icon.ico";
 
@@ -35,7 +36,7 @@ export async function generateMetadata(
   );
 
   return {
-    metadataBase: new URL("https://ymctranslation.com"),
+    metadataBase: new URL("https://siam-nistrans.com"),
     title: response[`seoTitle${lng}`],
     description: response[`seoDescription${lng}`],
     keywords: response[`seoKeyword${lng}`],

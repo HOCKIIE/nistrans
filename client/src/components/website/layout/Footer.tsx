@@ -59,25 +59,27 @@ export default function Footer({ logo, contact }: any) {
   return (
     <div className="text-black bg-slate-200 ">
       <div className="">
-        <div className="container mx-auto pt-4   ">
-          <div className=" py-5 flex items-center justify-between">
-            <div className="flex items-start gap-4 flex-col">
-              <Logo img={logo} />
-              <span className="text-base ">{contact?.addressTH}</span>
-              <div className="flex items-center gap-4">
-                <FaPhone size={20} />
+        <div className="container mx-auto pt-4">
+          <div className="grid">
+            <div className="py-5 flex items-center justify-between">
+              <div className="flex items-start gap-4 flex-col">
+                <Logo img={logo} />
+                <span className="text-base ">{contact?.addressTH}</span>
+                <div className="flex items-center gap-4">
+                  <FaPhone size={20} />
 
-                <span>โทรศัพท์ {contact?.telephone}</span>
+                  <span>โทรศัพท์ {contact?.telephone}</span>
+                </div>
               </div>
-            </div>
-            <div className="flex flex-col gap-2">
-              <label>Certificate</label>
-              <Image
-                src="/img/footerCertificate.png"
-                width={300}
-                height={300}
-                alt="cert"
-              />
+              <div className="flex flex-col gap-2">
+                <label>Certificate</label>
+                <Image
+                  src="/img/footerCertificate.png"
+                  width={300}
+                  height={300}
+                  alt="cert"
+                />
+              </div>
             </div>
           </div>
         </div>

@@ -3,18 +3,18 @@ import Image from "next/image";
 
 export function Logo({ color, img }: any) {
   return (
-    <div className="">
+    <div className="logo">
       <Link href="/" className="_links">
         {/* {img && ( */}
         <Image
           src={
             img
               ? `${process.env.NEXT_PUBLIC_BASE_URL}${img}`
-              : "/img/nistrans_logo.png"
+              : "/img/logo-top.jpg"
           }
-          alt="rent"
-          width={400}
-          height={400}
+          alt="Siam nistrans"
+          width={200}
+          height={200}
         />
         {/* )} */}
       </Link>

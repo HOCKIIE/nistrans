@@ -47,21 +47,21 @@ export default function Header({ logo, contact }: any) {
   return (
     <div className="shadow-md bg-white ">
       <div className="header  container mx-auto">
-        <div className="mx-auto flex justify-between items-center h-full ">
+        <div className="mx-auto flex justify-between items-center h-full px-2 lg:px-0">
           <div className="logo  ">
             <div className="py-4 flex items-center sm:gap-6">
               <Logo img={logo} />
             </div>
           </div>
           <div className="flex justify-between h-full items-center gap-30 ">
-            <div className="flex items-center gap-10 none md:block">
+            <div className="hidden xl:flex items-center gap-10 ">
               <NavBar />
               <div className="border px-4 rounded-lg text-slate-700 items-center gap-2 flex py-1 ">
                 <IoPersonSharp />
                 <span>สมัครงาน</span>
               </div>
             </div>
-            <div className="text-black notranslate flex gap-1">change Lang</div>
+            <div className="hidden xl:flex text-black notranslate gap-1">change Lang</div>
           </div>
 
           <div className="flex justify-center items-center lg:hidden ">

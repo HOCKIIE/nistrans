@@ -34,7 +34,7 @@ export default async function ServiceSection({ data }: any) {
         <h2 className="text-3xl">บริการของ Siam Nistrans</h2>
         <div className="h-1 w-20 bg-orange-400"></div>
       </div>
-      <div className="grid grid-cols-12 gap-6 px-20 ">
+      <div className="grid grid-cols-12 gap-6 px-4 md:px-6 lg:px-20 ">
         {mocks?.map((i: any, k: any) => (
           <ProductCard item={i} key={k} />
         ))}
