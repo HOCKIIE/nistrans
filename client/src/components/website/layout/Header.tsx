@@ -54,7 +54,7 @@ export default function Header({ logo, contact }: any) {
             </div>
           </div>
           <div className="flex justify-between h-full items-center gap-30 ">
-            <div className="flex items-center gap-10 ">
+            <div className="flex items-center gap-10 none md:block">
               <NavBar />
               <div className="border px-4 rounded-lg text-slate-700 items-center gap-2 flex py-1 ">
                 <IoPersonSharp />

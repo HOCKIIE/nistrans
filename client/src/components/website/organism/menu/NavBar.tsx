@@ -7,7 +7,7 @@ export default function NavBar() {
   const pathname = usePathname();
 
   return (
-    <div className="nav-menu h-full flex items-center " id="scrollable-content">
+    <div className="nav-menu h-full flex items-center d-none d-md-block" id="scrollable-content">
       {menuItem.map((item: any, key: number) => {
         if (item?.subMenu)
           return (

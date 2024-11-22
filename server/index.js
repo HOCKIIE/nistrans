@@ -35,8 +35,8 @@ require("./configs/errorHandler")(config.isProduction, app);
 
 // Start Server
 const server = app
-  .listen(config.port, "192.168.0.199", () => {
-    // .listen(config.port, "127.0.0.1", () => {
+  // .listen(config.port, "192.168.0.199", () => {
+    .listen(config.port, "127.0.0.1", () => {
     let host = server.address().address;
     let port = server.address().port;
     console.log(`Server is running on http://${host}:${port}`);
