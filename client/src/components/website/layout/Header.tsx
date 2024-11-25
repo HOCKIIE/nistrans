@@ -8,9 +8,10 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import Script from "next/script";
 import { hasCookie, setCookie } from "cookies-next";
 import { IoPersonSharp } from "react-icons/io5";
+import { ignore } from "antd/es/theme/useToken";
 
-export default function Header({ logo, contact }: any) {
-  const [currentLanguage, setCurrentLanguage] = useState<string>("th");
+export default function Header({ logo, contact, lng }: any) {
+  const [currentLanguage, setCurrentLanguage] = useState<string>(lng);
   const [openLang, setOpenLang] = useState<Boolean>(false);
   const [openID, setOpenID] = useState<String>("");
   const [isOpen, setIsOpen] = useState<Boolean>(false);
@@ -25,7 +26,12 @@ export default function Header({ logo, contact }: any) {
     setIsOpen(!isOpen);
     document.querySelector("html")?.classList.toggle("nav-open");
   };
-  const closeSideBar = () => {
+  const closeSideBar = (e:any) => {
+    let subMenuItem = e?.target.closest('.submenu-item')
+    if(subMenuItem){
+      subMenuItem.closest('.sidebar-menu').querySelectorAll('.active').map((e:any)=>e.target.classList.remove('active'))
+      subMenuItem.classList.add('active')
+    }
     setIsOpen(false);
     document.querySelector("html")?.classList.remove("nav-open");
   };
@@ -37,9 +43,10 @@ export default function Header({ logo, contact }: any) {
       setTimeout;
       e.currentTarget.closest(".menu-item").classList.toggle("active");
       const icon = e.currentTarget.parentElement?.querySelector(".plus-icon");
-      icon?.classList.toggle("rotate-135");
+      // icon?.classList.toggle("rotate-135");
       subMenu?.classList.toggle("open");
     } else {
+      // @ts-ignore
       closeSideBar();
     }
   };
@@ -47,15 +54,23 @@ export default function Header({ logo, contact }: any) {
   return (
     <div className="shadow-md bg-white ">
       <div className="header  container mx-auto">
-        <div className="mx-auto flex justify-between items-center h-full px-2 lg:px-0">
-          <div className="logo  ">
-            <div className="py-4 flex items-center sm:gap-6">
+        <div className="mx-auto h-full px-2 lg:px-0">
+          <div className="logo">
+            <div className="py-4 flex justify-between">
               <Logo img={logo} />
+              <div className="flex lg:hidden ">
+                <div
+                  className="cursor-pointer flex flex-col items-center justify-around w-8 h-8 burger"
+                  onClick={toggleSidebar}
+                >
+                  <GiHamburgerMenu size={35} color="#ED1F23" />
+                </div>
+              </div>
             </div>
           </div>
           <div className="flex justify-between h-full items-center gap-30 ">
             <div className="hidden xl:flex items-center gap-10 ">
-              <NavBar />
+              <NavBar lng={lng}/>
               <div className="border px-4 rounded-lg text-slate-700 items-center gap-2 flex py-1 ">
                 <IoPersonSharp />
                 <span>สมัครงาน</span>
@@ -64,14 +79,7 @@ export default function Header({ logo, contact }: any) {
             <div className="hidden xl:flex text-black notranslate gap-1">change Lang</div>
           </div>
 
-          <div className="flex justify-center items-center lg:hidden ">
-            <div
-              className="cursor-pointer flex flex-col items-center justify-around w-8 h-8 burger"
-              onClick={toggleSidebar}
-            >
-              <GiHamburgerMenu size={35} color="#ED1F23" />
-            </div>
-          </div>
+          
         </div>
       </div>
       <div className="flex">
@@ -83,6 +91,7 @@ export default function Header({ logo, contact }: any) {
           <div className="grid content-stretch">
             <SideBar
               contact={contact}
+              lng={lng}
               sideBar={{ toggleSubMenu, closeSideBar }}
               language={{
                 currentLanguage,
@@ -94,6 +103,7 @@ export default function Header({ logo, contact }: any) {
                 languages,
                 // switchLanguage,
               }}
+              
             />
           </div>
         </div>

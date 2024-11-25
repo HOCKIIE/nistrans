@@ -3,7 +3,7 @@ import { FaChevronDown } from "react-icons/fa";
 import Link from "next/link";
 // import { useSelectedLayoutSegment } from "next/navigation";
 
-export default function NavDropdown({ title, dropdownItems }: any) {
+export default function NavDropdown({ title, dropdownItems,lng }: any) {
   // const [active, setActive] = useState(false);
   const [show, setShow] = useState<String>("hidden");
   const [toggle, setToggle] = useState<Boolean>(false);
@@ -40,7 +40,7 @@ export default function NavDropdown({ title, dropdownItems }: any) {
               return (
                 <li key={k} className="divide-x divide-violet-50">
                   <Link
-                    href={v?.href}
+                    href={`/${lng}${v?.href}`}
                     className={`text-start hover:bg-slate-200 block px-4 py-2`}
                   >
                     {v?.title}

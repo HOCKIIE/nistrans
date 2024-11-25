@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export function Logo({ color, img }: any) {
   return (
-    <div className="logo">
+    <div className="logo md:w-auto">
       <Link href="/" className="_links">
         {/* {img && ( */}
         <Image

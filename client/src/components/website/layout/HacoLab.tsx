@@ -85,7 +85,7 @@ export default function HacoLab() {
                           alt="Control with smartphone"
                           className="img-responsive img-center"
                         />
-                        <div className="homeWarehouseRowText">
+                        <div className="mt-6">
                           เพียงดาวน์โหลดแอปพลิเคชัน
                           <br />
                           ก็ควบคุมได้ง่ายด้วย
@@ -102,7 +102,7 @@ export default function HacoLab() {
                           alt="Labeling containers for easy management"
                           className="img-responsive img-center"
                         />
-                        <div className="homeWarehouseRowText">
+                        <div className="mt-6">
                           ติดฉลากไว้ที่ภาชนะบรรจุเพื่อ
                           <br />
                           ขนส่งเพียงใช้สมาร์ทโฟนสแกน
@@ -119,7 +119,7 @@ export default function HacoLab() {
                           alt="Cloud-based information control"
                           className="img-responsive img-center"
                         />
-                        <div className="homeWarehouseRowText">
+                        <div className="mt-6">
                           ควบคุมข้อมูลด้วยคลาวด์
                           <br />
                           ถ้ามีอินเทอร์เน็ตก็สามารถ
@@ -135,11 +135,11 @@ export default function HacoLab() {
             
             </div>
           </section>
-          <div className="flex justify-center pt-10">
+          <div className="flex justify-center pt-10 pb-10">
             <Link
               href={`/service`}
               // href={`/${lang.toLowerCase()}/news-activity`}
-              className="  rounded-md border border-orange-400 px-4 py-2 flex items-center bg-white text-orange-400 hover:text-white hover:bg-orange-400 transition-all duration-500"
+              className="rounded-md border border-orange-400 px-4 py-2 flex items-center bg-white text-orange-400 hover:text-white hover:bg-orange-400 transition-all duration-500"
             >
               รายละเอียดเพิ่มเติม
               {/* {t("button.see-all")} */}

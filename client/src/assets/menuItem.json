@@ -14,14 +14,14 @@
     "href": "/service",
     "subMenu": [
       { "href": "/service/sea-freight", "title": "Sea Freight Forwarding" },
-      { "href": "/about-us/air-freight", "title": "Air Freight Forwarding" },
-      { "href": "/about-us/company-policy", "title": "Land Transportation" },
-      { "href": "/about-us/company-policy", "title": "Warehouse" },
-      { "href": "/about-us/company-policy", "title": "Machinary Installation" },
-      { "href": "/about-us/company-policy", "title": "House Moving" },
-      { "href": "/about-us/company-policy", "title": "Packing / Loading" },
-      { "href": "/about-us/company-policy", "title": "Custom Clearance" },
-      { "href": "/about-us/company-policy", "title": "SCM Solutions" }
+      { "href": "/service/air-freight", "title": "Air Freight Forwarding" },
+      { "href": "/service/land-transportation", "title": "Land Transportation" },
+      { "href": "/service/warehouse", "title": "Warehouse" },
+      { "href": "/service/machinary-installation", "title": "Machinary Installation" },
+      { "href": "/service/house-moving", "title": "House Moving" },
+      { "href": "/service/packing-loading", "title": "Packing / Loading" },
+      { "href": "/service/custom-clearance", "title": "Custom Clearance" },
+      { "href": "/service/scm-solutions", "title": "SCM Solutions" }
     ]
   },
   { "title": "BLOG", "href": "/news-activity" },

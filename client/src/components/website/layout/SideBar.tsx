@@ -9,9 +9,9 @@ import {
 import menuItem from "@/assets/menuItem.json";
 import { RiCloseLargeLine } from "react-icons/ri";
 
-export default function SideBar({ sideBar, language, contact }: any) {
+export default function SideBar({ contact, lng, sideBar, language }: any) {
   return (
-    <div className="flex">
+    <div className="flex bg-slate-100">
       <div
         className="sidebar-wraper w-full max-h-screen "
         style={{ height: `calc(100vh - 68px)` }}
@@ -44,7 +44,7 @@ export default function SideBar({ sideBar, language, contact }: any) {
                   {item?.subMenu.map((sub, i) => (
                     <li key={index + i}>
                       <Link
-                        href={sub.href}
+                        href={`/${lng}${sub.href}`}
                         title={sub.title}
                         onClick={sideBar.closeSideBar}
                         className="submenu-item"
@@ -59,7 +59,7 @@ export default function SideBar({ sideBar, language, contact }: any) {
           ))}
         </ul>
       </div>
-      <div className="fixed bottom-0 flex justify-between w-full max-w-90 p-4">
+      <div className="fixed bottom-0 flex justify-between w-full max-w-90 p-4 bg-slate-50">
         {/* <LanguageSwitcher position="top" language={language} /> */}
         {/* <div className="relative inline-block">
                 {language.openLang && (

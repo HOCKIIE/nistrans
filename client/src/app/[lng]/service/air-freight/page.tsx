@@ -9,7 +9,7 @@ export default function AirFreight() {
         engName="Service"
         prevPage={{ pageName: "หน้าแรก", url: "/" }}
       />
-      <div className="container mx-auto pb-10 text-black py-10">
+      <div className="container px-2 md:px-0 mx-auto pb-10 text-black py-10">
         <h1 className="text-blue-950 text-2xl">การขนส่งทางอากาศ</h1>
         <div className="py-10">
           <div className="branchesTopic">
@@ -147,30 +147,38 @@ export default function AirFreight() {
             </div>
           </div>
 
-          <div className="boxPhone1">
-            ช่องทางให้คำปรึกษาเรื่องการส่งออก/การนำเข้าของสาขาสนามบิน
-            <div className="row">
-              <div className="col-xs-12">
-                <div className="boxPhone1Label">ให้คำปรึกษาในการส่งออก</div>
+          <div className="">
+            <div className="grid grid-cols-12">
+              <div className="col-span-2"></div>
+              <div className="col-span-12 md:col-span-8 boxPhone1">
+                <div>ช่องทางให้คำปรึกษาเรื่องการส่งออก/การนำเข้าของสาขาสนามบิน</div>
+                <div className="grid grid-cols-12">
+                  <div className="col-span-12 md:col-span-6 pt-4">
+                    <div className="boxPhone1Label">ให้คำปรึกษาในการส่งออก</div>
+                    <a className="ms-2" href="tel:+66-2-134-7112">+66-2-134-7112</a>
+                  </div>
+                  <div className="col-span-12 md:col-span-6 pt-4">
+                    <div className="boxPhone1Label">ให้คำปรึกษาในการนำเข้า</div>
+                    <a className="ms-2" href="tel:+66-2-134-7003">+66-2-134-7003~5</a>
+                  </div>
+                </div>
               </div>
-              <div className="col-xs-12">
-                <a href="tel:+66-2-134-7112">+66-2-134-7112</a>
-              </div>
-              <div className="col-xs-12">
-                <div style={{ width: "20px" }}></div>
-              </div>
-              <div className="col-xs-12">
-                <div className="boxPhone1Label">ให้คำปรึกษาในการนำเข้า</div>
-              </div>
-              <div className="col-xs-12">
-                <a href="tel:+66-2-134-7003">+66-2-134-7003~5</a>
-              </div>
+              <div className="col-span-2"></div>
             </div>
+            
           </div>
 
           <div className="handlingBox">
             <div className="handlingTitle">สาขาที่ให้บริการ</div>
-            <div className="handlingList">
+            <ul className="list-disc grid md:flex">
+              <li className="ms-8 ps-0">กรุงเทพมหานคร</li>
+              <li className="ms-8 ps-0">สนามบินสุวรรณภูมิ</li>
+              <li className="ms-8 ps-0">พระนครศรีอยุธยา</li>
+              <li className="ms-8 ps-0">แหลมฉบัง</li>
+              <li className="ms-8 ps-0">ปราจีนบุรี</li>
+              <li className="ms-8 ps-0">เชียงใหม่</li>
+            </ul>
+            {/* <div className="handlingList">
               <table>
                 <tbody>
                   <tr>
@@ -183,7 +191,7 @@ export default function AirFreight() {
                   </tr>
                 </tbody>
               </table>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

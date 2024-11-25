@@ -9,7 +9,7 @@ export default function SeaFreight() {
         engName="Service"
         prevPage={{ pageName: "หน้าแรก", url: "/" }}
       />
-      <div className="container mx-auto pb-10 text-black py-10">
+      <div className="container px-2 md:px-0 mx-auto pb-10 text-black py-10">
         <h1 className="text-blue-950 text-2xl">การขนส่งทางทะเล</h1>
         <div className="py-10">
           <div>
@@ -108,24 +108,71 @@ export default function SeaFreight() {
                 </div>
               </div>
             </div>
+            <div className="grid">
+              <div className="bg-blue-950 p-1">
+                <div className="text-2xl text-white fw-bold text-center py-2">นำเสนอเส้นทางขนส่งและวิธีการขนส่งที่สอดคล้องตามความต้องการของลูกค้า</div>
+                <div className="grid grid-cols-12 bg-white transportation-routes">
+                    <div className="col-span-6 md:col-span-2 grid justify-center item">
+                      <img src="/img/service/service-1.png" alt="ต้นทางจัดส่ง" />
+                      <p className="text-center">ต้นทางจัดส่ง</p>
+                    </div>
+                    <div className="col-span-6 md:col-span-2 grid justify-center item">
+                      <img src="/img/service/service-2.png" alt="รับสินค้า" />
+                      <p className="text-center">รับสินค้า</p>
+                    </div>
+                    <div className="col-span-6 md:col-span-2 grid justify-center item">
+                      <img src="/img/service/service-5.png" alt="คลังสินค้า" />
+                      <p className="text-center">คลังสินค้า</p>
+                    </div>
+                    <div className="col-span-6 md:col-span-2 grid justify-center item">
+                      <img src="/img/service/service-4.png" alt="ขนส่งทางทะเล" />
+                      <p className="text-center">ขนส่งทางทะเล</p>
+                    </div>
+                    <div className="col-span-6 md:col-span-2 grid justify-center item">
+                      <img src="/img/service/service-5.png" alt="คลังสินค้า" />
+                      <p className="text-center">คลังสินค้า</p>
+                    </div>
+                    <div className="col-span-6 md:col-span-2 grid justify-center item">
+                      <img src="/img/service/service-6.png" alt="ปลายทางจัดส่ง" />
+                      <p className="text-center">ปลายทางจัดส่ง</p>
+                    </div>
+                </div>
 
-            <div className="ssfBox1">
-              <img
-                src="/img/sea-freight-forwarding/process.jpg"
-                className="w-full"
-                alt="Sea Freight Forwarding"
-              />
-              <div className="ssfBox1Text1">
-                นำเสนอเส้นทางขนส่งและวิธีการขนส่งที่สอดคล้องตามความต้องการของลูกค้า
               </div>
-              <ul className="ssfBox1Text2">
-                <li style={{ paddingRight: "20px" }}>ต้นทางจัดส่ง</li>
-                <li style={{ paddingRight: "20px" }}>รับสินค้า</li>
-                <li style={{ paddingRight: "20px" }}>คลังสินค้า</li>
-                <li style={{ paddingRight: "12px" }}>ขนส่งทางทะเล</li>
-                <li style={{ paddingLeft: "5px" }}>คลังสินค้า</li>
-                <li style={{ paddingLeft: "17px" }}>ปลายทางจัดส่ง</li>
-              </ul>
+            </div>
+
+            {/* <div className="ssfBox1">
+              <div className="relative flex justify-center">
+                <img
+                  src="/img/sea-freight-forwarding/process.jpg"
+                  className=""
+                  alt="Sea Freight Forwarding"
+                />
+                <div className="ssfBox1Text1">
+                  นำเสนอเส้นทางขนส่งและวิธีการขนส่งที่สอดคล้องตามความต้องการของลูกค้า
+                </div>
+                <ul className="absolute flex justify-center bottom-4">
+                  <li className="text-center" style={{width:'9.7rem'}}>ต้นทางจัดส่ง</li>
+                  <li className="text-center" style={{width:'9.7rem'}}>รับสินค้า</li>
+                  <li className="text-center" style={{width:'9.7rem'}}>คลังสินค้า</li>
+                  <li className="text-center" style={{width:'9.7rem'}}>ขนส่งทางทะเล</li>
+                  <li className="text-center" style={{width:'9.7rem'}}>คลังสินค้า</li>
+                  <li className="text-center" style={{width:'9.7rem'}}>ปลายทางจัดส่ง</li>
+                </ul>
+              </div>
+            </div> */}
+            <div>
+              <div className="handlingBox">
+                <div className="handlingTitle">สาขาที่ให้บริการ</div>
+                <ul className="list-disc grid md:flex">
+                  <li className="ms-8 ps-0">กรุงเทพมหานคร</li>
+                  <li className="ms-8 ps-0">พระนครศรีอยุธยา</li>
+                  <li className="ms-8 ps-0">แหลมฉบัง</li>
+                  <li className="ms-8 ps-0">ปราจีนบุรี</li>
+                  <li className="ms-8 ps-0">เชียงใหม่</li>
+                  <li className="ms-8 ps-0">บางปะกง</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
