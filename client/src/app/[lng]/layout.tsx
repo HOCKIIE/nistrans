@@ -72,7 +72,6 @@ export default async function RootLayout({
   params: { lng: string };
 }>) {
   const contact = await fetchContact();
-  console.log(lng)
   return (
     <html lang={lng} dir={dir(lng)}>
       <ConfigProvider

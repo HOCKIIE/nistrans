@@ -193,21 +193,23 @@ export default function LandTransport() {
                   และประเทศเพื่อนบ้านใกล้เคียง
                 </li>
               </ul>
-              <div className="grid grid-cols-12">
+              <div className="grid grid-cols-12 gap-4">
                 <div className="col-span-1"></div>
                 <div className="col-span-12 md:col-span-10">
                   <p>พัฒนาเส้นทางขนส่งทางบกทั้งขาออกและขาเข้าระหว่างประเทศไทยกับประเทศเพื่อนบ้าน เช่น ลาว กัมพูชา มาเลเซีย และประเทศต่างๆ ในอาเซียนให้ได้โดยเร็วเพื่อให้บริการในเส้นทางต่างๆ ซึ่งจะอำนวยประโยชน์ในด้านการลด Transit Time ของสินค้าและลดสินค้าคงคลังในการขนส่ง</p>
                 </div>
                 <div className="col-span-1"></div>
-                <div className="col-span-1"></div>
-                <div className="col-span-8 md:cols-pan-6">
+                <div className="sm:hidden md:col-span-1"></div>
+                <div className="col-span-1 hidden md:block"></div>
+                <div className="col-span-12 md:col-span-7">
                   <img
                     src="/img/service/land-transportation/003.jpg"
                     className="img-responsive"
                     alt="Land Transportation"
                   />
                 </div>
-                <div className="col-span-12 md:cols-span-2">
+                <div className="col-span-3 md:hidden"></div>
+                <div className="col-span-6 md:col-span-2">
                   <a
                     className="fancyBox"
                     href="/img/service/land-transportation/006.jpg"

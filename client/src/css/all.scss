@@ -119,3 +119,21 @@
     border-left: 18px solid orange;
 
 }
+.arrow-right{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.arrow-right:after{
+    content: " ";
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 4.3rem;
+    height: 0;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    border-left: 18px solid orange;
+}

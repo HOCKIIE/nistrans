@@ -14,8 +14,6 @@ export default function SeaFreight() {
         <div className="py-10">
           <div>
             <div
-              className="branchesTopic no-padding-r"
-              style={{ paddingLeft: "15px" }}
             >
               บริษัทให้บริการขนส่งแบบไร้รอยต่อทั่วทุกมุมโลกในฐานะ International
               Freight Forwarder เช่น การลดค่าขนส่งทางทะเลและต้นทุนการขนส่ง
